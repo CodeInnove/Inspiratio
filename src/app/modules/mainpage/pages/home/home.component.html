@@ -1,5 +1,6 @@
 <body>
   <div class="container">
+    <!-- Barra de navegação -->
     <nav class="sidebar">
       <ul class="menu">
         <h1>
@@ -44,6 +45,8 @@
       </div>
     </nav>
 
+    <!-- Tabela de Pacientes -->
+
     <div class="items">
       <div class="novos-pacientes">
         <h1>NOVOS PACIENTES</h1>
@@ -70,6 +73,24 @@
           </div>
         </div>
       </div>
+
+      <!-- Calendario -->
+
+      <div class="calendario-container">
+        <input matInput [matDatepicker] = "picker" placeholder="Escolha uma data"
+        readonly>
+        <button mat-icon-button (click)="picker.open()">
+          <mat-icon>event</mat-icon>
+        </button>
+        <mat-datepicker #picker></mat-datepicker>
+        <button mat-raised-button color="primary">teste</button>
+  
+       </div>
+       
     </div>
+
+    <!-- Calendario -->
+     
+
   </div>
 </body>
