@@ -8,7 +8,7 @@
     font-family: "Saira", sans-serif;
   }
 
-  body{
+  body {
     height: 100vh;
   }
 
@@ -17,19 +17,30 @@
     height: 100vh;
   }
 
-
-
-
   
   .sidebar {
     width: 250px;
     height: 100vh;
-    background-color: #ca5ae9da;
+    position: relative;
+    background-size: cover;
     padding: 20px;
-    color: white;
     border-right: 2px;
     top: 0;
     left: 0;
+
+    &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/leo2.jpg");
+    background-size: cover;     // Ajuste da imagem
+    background-position: center; // Centraliza a imagem
+    opacity: 0.5;               // Define a opacidade da imagem de fundo
+    z-index: -1;
+    }
 
     p {
       font-size: 18px;
@@ -39,7 +50,7 @@
       color: #000000;
 
       &:hover {
-        color: #fff;
+        color: #aa4ee7;
         cursor: pointer;
         transition: 0.3s;
       }
@@ -71,7 +82,7 @@
   
           &:hover {
             cursor: pointer;
-            color: #ecf0f1;
+            color: #aa4ee7;
           }
         }
       }
@@ -87,14 +98,14 @@
   .novos-pacientes{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1 fr));
-    background-color: rgb(59, 120, 153);
+    background-color: #aa4ee78c;
     gap: 20px;
     height: 400px;
     border-radius: 10px;
    h1{
     flex: 1;
     padding: 15px 0 0 25px;
-    color: #fff;
+    color: #000000;
     font-size: 25px;
     font-family: "Saira", sans-serif;
    }
@@ -119,7 +130,7 @@
     flex: 1;
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: #000000;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -129,7 +140,7 @@
     flex: 1;
     text-align: center;
     padding: 10px;
-    background-color: rgb(196, 228, 245);
+    background-color: #ffffffdc;
     border-radius: 5px;
   }
 
