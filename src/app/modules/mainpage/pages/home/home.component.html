@@ -76,16 +76,28 @@
 
       <!-- Calendario -->
 
-      <div class="calendario-container">
-        <input matInput [matDatepicker] = "picker" placeholder="Escolha uma data"
-        readonly>
-        <button mat-icon-button (click)="picker.open()">
-          <mat-icon>event</mat-icon>
-        </button>
-        <mat-datepicker #picker></mat-datepicker>
-        <button mat-raised-button color="primary">teste</button>
-  
-       </div>
+      <!--<section class="calendario-container">
+        
+        <mat-form-field appearance="fill">
+          <mat-label>Escolha uma data</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Escolha uma data" readonly>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field> 
+      
+       
+        <mat-calendar [(selected)]="selectedDate" (selectedChange)="onDateChange($event)"></mat-calendar>
+      </section> -->
+    
+      
+
+      <section style="width: 350px;">
+        
+        <mat-calendar></mat-calendar>
+        
+      </section>
+
+    
        
     </div>
 
