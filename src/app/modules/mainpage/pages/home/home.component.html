@@ -1,4 +1,4 @@
-<body>
+<main>
   <div class="container">
     <!-- Barra de navegação -->
     <nav class="sidebar">
@@ -72,6 +72,7 @@
             <div class="column">rua feliep doe maoes</div>
           </div>
         </div>
+       
       </div>
 
       <!-- Calendario -->
@@ -88,21 +89,50 @@
        
         <mat-calendar [(selected)]="selectedDate" (selectedChange)="onDateChange($event)"></mat-calendar>
       </section> -->
-    
-      
 
-      <section style="width: 350px;">
+      <section class="calendar">
         
-        <mat-calendar></mat-calendar>
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [(selected)]="selected"></mat-calendar>
+          <p>Selected date: {{selected()}}</p>
+        </mat-card>
+        
+
+        <div class="psicos-container">
+          <h2>Escolha o Profissional</h2>
+          <div class="lista-psicologos">
+            <ul>
+              <li>
+                <img class = "fundo" src="/photon.png" alt="fundo1">
+                <span>Fernando Guimaraes</span>
+                <button></button>
+              </li>
+              <li>
+                <img class = "fundo" src="/photon.png" alt="fundo1">
+                <span>Fernando Guimaraes</span>
+                <button></button>
+              </li>
+              <li>
+                <img class = "fundo" src="/photon.png" alt="fundo1">
+                <span>Fernando Guimaraes</span>
+                <button></button>
+              </li>
+            </ul>
+          </div>
+
+        </div>
         
       </section>
 
-    
+      
        
     </div>
+    
 
     <!-- Calendario -->
      
 
   </div>
-</body>
+</main>
+  
+
