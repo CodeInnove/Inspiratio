@@ -7,16 +7,12 @@ import { NavbarComponent } from './modules/mainpage/components/navbar/navbar.com
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   },
   {
     path: 'login',
     component: LoginComponent
   },
-  {
-    path: 'nav',
-    component: NavbarComponent
-  }
   
 ];

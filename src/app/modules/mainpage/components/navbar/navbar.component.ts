@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-navbar',
   standalone: true,
   imports: [
     MatSidenavModule,
@@ -17,5 +17,5 @@ import { MatListModule } from '@angular/material/list';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  title = 'nav';
+  
 }

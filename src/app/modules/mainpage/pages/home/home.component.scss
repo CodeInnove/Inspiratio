@@ -16,68 +16,10 @@ main {
 .container {
   display: flex;
   height: 100vh;
+  
 }
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  padding: 20px;
-  border-right: 2px;
-  top: 0;
-  left: 0;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/leo2.jpg');
-    background-size: cover; // Ajuste da imagem
-    background-position: center; // Centraliza a imagem
-    opacity: 0.5; // Define a opacidade da imagem de fundo
-    z-index: -1;
-  }
-
-  //.home{
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  //gap: 10px;
-  //}
-
-  .titleicon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-  p {
-    font-size: 18px;
-    font-family: 'Saira', sans-serif;
-    margin: 0;
-    padding: 5px 10px 5px 20px;
-    color: #000000;
-
-    &:hover {
-      color: #aa4ee7;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-  }
-
-  .logo {
-    align-items: center;
-    padding-left: 10px;
-
-    .borboleta {
-      width: 18vh;
-    }
-  }
 
   .menu {
     list-style: none;
@@ -101,7 +43,7 @@ main {
       }
     }
   }
-}
+
 
 .items {
   flex-grow: 1;

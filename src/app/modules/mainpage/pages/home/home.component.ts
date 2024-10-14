@@ -7,7 +7,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatCardModule, MatDatepickerModule],
+  imports: [MatCardModule, MatDatepickerModule,],
   providers: [provideNativeDateAdapter()],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
