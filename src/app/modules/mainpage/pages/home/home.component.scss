@@ -15,10 +15,9 @@ main {
 
 .container {
   display: flex;
-  height: 100vh;
-  
+  flex: 1; /* Ocupa o restante do espaço disponível */
+  padding: 20px; /* Adiciona um padding para espaçar o conteúdo */
 }
-
 
 
   .menu {

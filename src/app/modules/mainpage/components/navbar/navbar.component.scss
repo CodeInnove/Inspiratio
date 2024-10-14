@@ -1,7 +1,7 @@
 .sidenav-container {
-    height: 100vh;
-    display: flex;
-  }
+  height: 100vh;
+  display: flex;
+}
 
   .perfil {
     display: flex;
@@ -21,8 +21,7 @@
   .sidenav {
     width: 200px;
     background-color: rgba(255, 255, 255, 0.9);
-    flex: 1;
-    overflow-y: auto;
+    flex: 0 0 auto; /* Fix width and prevent it from growing */
   }
 
   .toolbar {
