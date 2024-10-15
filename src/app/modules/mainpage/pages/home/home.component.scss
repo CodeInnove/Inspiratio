@@ -10,13 +10,16 @@
 }
 
 main {
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
   display: flex;
   flex: 1; /* Ocupa o restante do espaço disponível */
-  padding: 20px; /* Adiciona um padding para espaçar o conteúdo */
+  padding: 0px; /* Adiciona um padding para espaçar o conteúdo */
+  background-image: url(/leo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -52,7 +55,7 @@ main {
   flex-direction: column;
 
   .novos-pacientes {
-    background-color: #aa4ee78c;
+    background-color: #aa4ee7d5;
     height: 50%;
     border-radius: 10px;
     h1 {

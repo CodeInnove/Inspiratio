@@ -1,5 +1,5 @@
 .sidenav-container {
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -25,9 +25,12 @@
   }
 
   .toolbar {
-    background-color: rgba(172, 113, 255, 0.7);
+    background-color: #aa4ee7d5;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 0 0 0 32px;
   }
 
   p.menuitem {
@@ -40,6 +43,12 @@
     font-size: 1.2rem;
     color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      color: #aa4ee7d5;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+    }
   }
 
   .titleicon {
@@ -56,6 +65,12 @@
     cursor: pointer;
     color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      color: #aa4ee7d5;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+    }
   }
 
   img {

@@ -12,7 +12,7 @@ import { NavbarComponent } from './modules/mainpage/components/navbar/navbar.com
     RouterOutlet,
   ],
   template: `
-  <app-navbar></app-navbar>
+  
   <router-outlet></router-outlet>`,
 })
 export class AppComponent {
